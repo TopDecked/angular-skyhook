@@ -1,6 +1,6 @@
 {
     "name": "@topdecked/angular-skyhook-core",
-    "version": "1.4.7",
+    "version": "1.4.8",
     "repository": "https://github.com/TopDecked/angular-skyhook",
     "dependencies": {
         "dnd-core": "^11.1.3",
