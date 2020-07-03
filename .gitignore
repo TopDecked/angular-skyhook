@@ -57,6 +57,5 @@ npm-debug.*
 tools/**/*.js
 packages/*/scripts
 packages/**/ng-package.json
-packages/**/package-lock.json
 lerna-debug.log
 package.json.lerna_backup
