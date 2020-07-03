@@ -1,9 +1,11 @@
-import { Component, Input  } from "@angular/core";
-import { Coord } from './coord';
-import { GameService } from "./game.service";
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { ItemTypes } from "./constants";
 import { map } from 'rxjs/operators';
+
+import { Component, Input } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { ItemTypes } from './constants';
+import { Coord } from './coord';
+import { GameService } from './game.service';
 
 @Component({
     selector: 'app-board-square',

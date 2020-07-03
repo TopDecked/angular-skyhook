@@ -1,7 +1,7 @@
-import { SkyhookDndService, DropTargetSpec } from "@angular-skyhook/core";
-import { Subject, Subscription, Observable } from "rxjs";
-import { of, race, empty, never } from "rxjs";
-import { distinctUntilChanged, filter, switchMapTo, delay, takeUntil, take, tap } from "rxjs/operators";
+import { Observable, Subject } from 'rxjs';
+import { delay, distinctUntilChanged, filter, switchMapTo, take, takeUntil } from 'rxjs/operators';
+
+import { DropTargetSpec, SkyhookDndService } from '@topdecked/angular-skyhook-core';
 
 type Types = string | symbol | (string|symbol)[]
 

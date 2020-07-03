@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SkyhookDndModule } from "@angular-skyhook/core";
+import { SkyhookDndModule } from '@topdecked/angular-skyhook-core';
 
-import { Container } from './container.component';
-import { Target } from './target.component';
-import { Box } from './box.component';
-import { TreeService } from './tree.service';
-import { Folder } from './folder.component';
 import { UtilityModule } from '../utility.module';
+import { Box } from './box.component';
+import { Container } from './container.component';
+import { Folder } from './folder.component';
+import { Target } from './target.component';
+import { TreeService } from './tree.service';
 
 @NgModule({
     declarations: [

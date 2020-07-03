@@ -1,11 +1,12 @@
-import { NgModule } from "@angular/core";
-import { SkyhookSortable } from "./directives/sortable.directive";
-import { SkyhookSortableList } from "./directives/list.component";
-import { SkyhookSortableTemplate } from "./directives/template.directive";
-import { SkyhookSortableRenderer } from "./directives/render.directive";
-import { SkyhookSortableExternal } from "./directives/external.directive";
-import { CommonModule } from "@angular/common";
-import { SkyhookDndModule } from "@angular-skyhook/core";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { SkyhookDndModule } from '@topdecked/angular-skyhook-core';
+
+import { SkyhookSortableExternal } from './directives/external.directive';
+import { SkyhookSortableList } from './directives/list.component';
+import { SkyhookSortableRenderer } from './directives/render.directive';
+import { SkyhookSortable } from './directives/sortable.directive';
+import { SkyhookSortableTemplate } from './directives/template.directive';
 
 /** @ignore */
 const EXPORTS = [

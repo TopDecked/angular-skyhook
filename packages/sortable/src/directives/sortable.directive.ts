@@ -1,19 +1,14 @@
-import {
-    Input,
-    Directive,
-    OnInit,
-    OnChanges,
-    OnDestroy,
-    AfterViewInit,
-    ElementRef,
-    SimpleChanges,
-    ChangeDetectorRef,
-} from '@angular/core';
 // @ts-ignore
-import { Subscription, Observable, BehaviorSubject } from "rxjs";
-import { DropTarget, SkyhookDndService, DropTargetMonitor } from "@angular-skyhook/core";
-import { SortableSpec, DraggedItem, RenderContext, HoverTrigger } from "../types";
+import { BehaviorSubject, Observable, Subscription } from 'rxjs';
+
+import {
+  AfterViewInit, ChangeDetectorRef, Directive, ElementRef, Input, OnChanges, OnDestroy, OnInit,
+  SimpleChanges
+} from '@angular/core';
+import { DropTarget, DropTargetMonitor, SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { isEmpty } from '../isEmpty';
+import { DraggedItem, HoverTrigger, RenderContext, SortableSpec } from '../types';
 
 @Directive({
     selector: '[ssSortable]',

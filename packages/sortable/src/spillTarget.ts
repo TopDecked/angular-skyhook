@@ -1,7 +1,9 @@
-import { SkyhookDndService, DropTarget } from "@angular-skyhook/core";
-import { DraggedItem } from "./types";
 import { Subject } from 'rxjs';
-import { filter, distinctUntilChanged } from 'rxjs/operators';
+import { distinctUntilChanged, filter } from 'rxjs/operators';
+
+import { DropTarget, SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { DraggedItem } from './types';
 
 export const SPILLED_LIST_ID: symbol = Symbol("SPILLED_LIST_ID");
 

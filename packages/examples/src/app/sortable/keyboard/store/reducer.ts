@@ -1,7 +1,9 @@
-import { DraggedItem, SortableEvents, SortableAction } from '@angular-skyhook/sortable';
-import { List, Record } from 'immutable';
-import { Blob } from './blob';
 import * as faker from 'faker';
+import { List, Record } from 'immutable';
+
+import { DraggedItem, SortableAction, SortableEvents } from '@topdecked/angular-skyhook-sortable';
+
+import { Blob } from './blob';
 
 export enum ActionTypes {
     SORT = "[simple-ngrx] SORT",

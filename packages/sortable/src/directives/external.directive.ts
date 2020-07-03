@@ -1,17 +1,9 @@
-import {
-    Directive,
-    Input,
-    ElementRef,
-    OnChanges,
-    OnDestroy
-} from "@angular/core";
-import {
-    SkyhookDndService,
-    DragSource
-} from "@angular-skyhook/core";
-import { DraggedItem, SortableSpec, Size } from "../types";
-// @ts-ignore
-import { Observable, Subscription } from 'rxjs';
+
+
+import { Directive, ElementRef, Input, OnChanges, OnDestroy } from '@angular/core';
+import { DragSource, SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { DraggedItem, Size, SortableSpec } from '../types';
 
 export const EXTERNAL_LIST_ID: symbol = Symbol("EXTERNAL_LIST_ID");
 

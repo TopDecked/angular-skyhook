@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { SkyhookDndService } from "@angular-skyhook/core";
+import { Component, EventEmitter, Output } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { ItemTypes } from './itemTypes';
 
 @Component({

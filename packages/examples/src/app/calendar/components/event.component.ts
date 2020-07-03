@@ -1,13 +1,13 @@
-import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
-import { CalendarEvent } from "../event";
-import { Moment } from "moment-mini-ts";
-import { SkyhookDndService, DragSourceSpec } from "@angular-skyhook/core";
-import { Store, createSelector, Action } from "@ngrx/store";
-import { State } from "app/reducers";
-import { ItemTypes } from "../item-types";
-import { BeginDragExistingEvent, EndDragExistingEvent } from "../store/calendar.actions";
-import { withLatestFrom, combineAll } from "rxjs/operators";
-import { Observable, combineLatest } from "rxjs";
+import { State } from 'app/reducers';
+import { combineLatest } from 'rxjs';
+
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { createSelector, Store } from '@ngrx/store';
+import { DragSourceSpec, SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { CalendarEvent } from '../event';
+import { ItemTypes } from '../item-types';
+import { BeginDragExistingEvent, EndDragExistingEvent } from '../store/calendar.actions';
 
 @Component({
     selector: 'cal-event',

@@ -1,8 +1,7 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { SkyhookDndService, Offset } from "@angular-skyhook/core";
-import { map } from "rxjs/operators";
-// @ts-ignore
-import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Offset, SkyhookDndService } from '@topdecked/angular-skyhook-core';
 
 /**
  * This is internal, you probably won't ever need to use it directly.

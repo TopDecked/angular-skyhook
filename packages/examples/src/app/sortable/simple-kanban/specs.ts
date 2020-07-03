@@ -1,7 +1,9 @@
-import { Injectable } from "@angular/core";
-import { SortableSpec, DraggedItem } from "@angular-skyhook/sortable";
-import { ItemTypes } from "./item-types";
 import { produce } from 'immer';
+
+import { Injectable } from '@angular/core';
+import { DraggedItem, SortableSpec } from '@topdecked/angular-skyhook-sortable';
+
+import { ItemTypes } from './item-types';
 
 export type CardTree = Array<CardList>;
 

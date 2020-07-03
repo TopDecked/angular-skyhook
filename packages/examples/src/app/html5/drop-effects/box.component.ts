@@ -1,6 +1,7 @@
-import { Component, Output, EventEmitter, Input } from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { ItemTypes } from "./item-types";
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { ItemTypes } from './item-types';
 
 interface DropResult {
     dropEffect?: 'copy' | 'move' | 'link' | 'none';

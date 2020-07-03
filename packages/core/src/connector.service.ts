@@ -4,40 +4,26 @@
 /** a second comment */
 
 /// <reference types="zone.js" />
-import {
-    Injectable,
-    Inject,
-    NgZone,
-} from "@angular/core";
-import { TYPE_DYNAMIC, DRAG_DROP_MANAGER } from "./tokens";
-import { DragDropManager } from "dnd-core";
+import { DragDropManager } from 'dnd-core';
+import { SubscriptionLike, TeardownLogic } from 'rxjs';
 
-import { DropTargetSpec } from "./drop-target-specification";
-import createTargetConnector from "./internal/createTargetConnector";
-import registerTarget from "./internal/register-target";
+import { Inject, Injectable, NgZone } from '@angular/core';
 
-import { DragSourceSpec } from "./drag-source-specification";
-import createSourceConnector from "./internal/createSourceConnector";
-import registerSource from "./internal/register-source";
-
-import {
-    SubscriptionLike,
-    TeardownLogic
-} from "rxjs";
-import { TypeOrTypeArray } from "./type-ish";
-import {
-    // sourceConnectionFactory,
-    // targetConnectionFactory,
-    SourceConnection,
-    TargetConnection
-} from "./internal/connection-factory";
-import { DragLayerConnectionClass } from "./internal/drag-layer-connection";
-
-import { DragSource, DropTarget, DragLayer } from "./connection-types";
-import { createSourceMonitor } from "./internal/createSourceMonitor";
-import { createTargetFactory } from "./internal/createTargetFactory";
-import { createTargetMonitor } from "./internal/createTargetMonitor";
-import { createSourceFactory } from "./internal/createSourceFactory";
+import { DragLayer, DragSource, DropTarget } from './connection-types';
+import { DragSourceSpec } from './drag-source-specification';
+import { DropTargetSpec } from './drop-target-specification';
+import { SourceConnection, TargetConnection } from './internal/connection-factory';
+import createSourceConnector from './internal/createSourceConnector';
+import { createSourceFactory } from './internal/createSourceFactory';
+import { createSourceMonitor } from './internal/createSourceMonitor';
+import createTargetConnector from './internal/createTargetConnector';
+import { createTargetFactory } from './internal/createTargetFactory';
+import { createTargetMonitor } from './internal/createTargetMonitor';
+import { DragLayerConnectionClass } from './internal/drag-layer-connection';
+import registerSource from './internal/register-source';
+import registerTarget from './internal/register-target';
+import { DRAG_DROP_MANAGER, TYPE_DYNAMIC } from './tokens';
+import { TypeOrTypeArray } from './type-ish';
 
 /**
  * Represents an RxJS Subscription, with multi-version compatibility.
@@ -52,7 +38,7 @@ export interface AddSubscription extends SubscriptionLike {
  *  If your components have lots of subscriptions, it can get tedious having to
  *  unsubscribe from all of them, and you might forget. A common pattern is to create an RxJS Subscription
  *  (maybe called `destroy`), to use `this.destroy.add(xxx.subscribe(...))`
- *  and to call `destroy.unsubscribe()` once to clean up all of them. @angular-skyhook/core
+ *  and to call `destroy.unsubscribe()` once to clean up all of them. @topdecked/angular-skyhook-core
  *  supports this pattern with by using the `subscription` parameter on the
  *  constructors. Simply:
  *

@@ -1,7 +1,9 @@
-import { Input, Component, OnInit } from '@angular/core';
-import { SkyhookDndService } from "@angular-skyhook/core";
+import { map } from 'rxjs/operators';
+
+import { Component } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { Colors } from './colors';
-import { map, filter, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-nested-source-targetbox',

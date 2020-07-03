@@ -1,10 +1,11 @@
 import { Component, ElementRef } from '@angular/core';
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { spillTarget } from "@angular-skyhook/sortable";
-import { ItemTypes } from './item-types';
 import { Store } from '@ngrx/store';
-import { Spill } from './store';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+import { spillTarget } from '@topdecked/angular-skyhook-sortable';
+
 import { Card } from './card';
+import { ItemTypes } from './item-types';
+import { Spill } from './store';
 
 @Component({
     selector: 'kanban-container',

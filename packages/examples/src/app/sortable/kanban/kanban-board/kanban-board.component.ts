@@ -1,10 +1,11 @@
-import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
-import { DraggedItem } from "@angular-skyhook/sortable";
-import { Card } from "../card";
-import { ItemTypes } from "../item-types";
-import { AddCard, RemoveCard } from "../store";
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { DraggedItem } from '@topdecked/angular-skyhook-sortable';
+
+import { Card } from '../card';
+import { ItemTypes } from '../item-types';
 import { SortableSpecService } from '../specs';
+import { AddCard, RemoveCard } from '../store';
 
 @Component({
     selector: "kanban-board",

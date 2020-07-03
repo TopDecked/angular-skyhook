@@ -1,15 +1,9 @@
+import { DragDropManager } from 'dnd-core';
+
 import {
-    Component,
-    TemplateRef,
-    ContentChild,
-    Input,
-    Inject,
-    ChangeDetectionStrategy
-} from "@angular/core";
-import { SkyhookDndService, DRAG_DROP_MANAGER } from "@angular-skyhook/core";
-import { DragDropManager } from "dnd-core";
-// @ts-ignore
-import { Observable } from 'rxjs';
+  ChangeDetectionStrategy, Component, ContentChild, Inject, Input, TemplateRef
+} from '@angular/core';
+import { DRAG_DROP_MANAGER, SkyhookDndService } from '@topdecked/angular-skyhook-core';
 
 export interface PreviewTemplateContext {
     /** same as type */

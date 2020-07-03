@@ -1,17 +1,18 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SkyhookDndModule } from "@angular-skyhook/core";
-import { CustomDragLayerComponent } from './custom-drag-layer/custom-drag-layer.component';
-import { DraggableBoxComponent } from './draggable-box/draggable-box.component';
-import { DragContainerComponent } from './drag-container/drag-container.component';
+import { SkyhookDndModule } from '@topdecked/angular-skyhook-core';
+
+import { UtilityModule } from '../utility.module';
 import { BoxDragPreviewComponent } from './box-drag-preview/box-drag-preview.component';
 import { ContainerComponent } from './container.component';
-import { SpotComponent } from './spot.component';
 import { CrosshairsComponent } from './crosshairs.component';
 import { CubeComponent } from './cube.component';
-import { UtilityModule } from '../utility.module';
+import { CustomDragLayerComponent } from './custom-drag-layer/custom-drag-layer.component';
+import { DragContainerComponent } from './drag-container/drag-container.component';
+import { DraggableBoxComponent } from './draggable-box/draggable-box.component';
+import { SpotComponent } from './spot.component';
 
 @NgModule({
     declarations: [

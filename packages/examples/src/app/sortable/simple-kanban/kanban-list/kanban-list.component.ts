@@ -1,13 +1,7 @@
-import {
-    Component,
-    Input,
-    Output,
-    EventEmitter,
-    ChangeDetectionStrategy,
-    Optional,
-} from "@angular/core";
-import { SortableSpec, SkyhookSortableRenderer } from "@angular-skyhook/sortable";
-import { Card, CardList, SortableSpecService } from "../specs";
+import { Component, EventEmitter, Input, Optional, Output } from '@angular/core';
+import { SkyhookSortableRenderer } from '@topdecked/angular-skyhook-sortable';
+
+import { Card, CardList, SortableSpecService } from '../specs';
 
 @Component({
     selector: "kanban-list",

@@ -1,18 +1,18 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { UtilityModule } from "../utility.module";
-import { SkyhookDndModule } from "@angular-skyhook/core";
-import { RouterModule } from "@angular/router";
-import { ReactiveFormsModule } from "@angular/forms";
-import { SkyhookMultiBackendModule } from "@angular-skyhook/multi-backend";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
-import { CalendarService } from "./store/service";
-import * as fromCalendar from './store/calendar.reducer';
+import { SkyhookDndModule } from '@topdecked/angular-skyhook-core';
+import { SkyhookMultiBackendModule } from '@topdecked/angular-skyhook-multi-backend';
 
-import { CalendarContainerComponent } from "./components/container.component";
-import { CalendarComponent } from "./components/calendar.component";
-import { CalendarDayComponent } from "./components/day.component";
-import { CalendarEventComponent } from "./components/event.component";
+import { UtilityModule } from '../utility.module';
+import { CalendarComponent } from './components/calendar.component';
+import { CalendarContainerComponent } from './components/container.component';
+import { CalendarDayComponent } from './components/day.component';
+import { CalendarEventComponent } from './components/event.component';
+import * as fromCalendar from './store/calendar.reducer';
+import { CalendarService } from './store/service';
 
 @NgModule({
     declarations: [

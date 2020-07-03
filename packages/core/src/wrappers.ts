@@ -1,4 +1,6 @@
-import { DragSourceSpec, DragSource, DropTargetSpec, DropTarget } from "@angular-skyhook/core";
+import {
+  DragSource, DragSourceSpec, DropTarget, DropTargetSpec
+} from '@topdecked/angular-skyhook-core';
 
 export type Types = string | symbol | (string|symbol)[]
 

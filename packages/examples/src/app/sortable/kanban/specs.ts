@@ -1,12 +1,13 @@
-import { Injectable } from "@angular/core";
-import { NgRxSortable } from "@angular-skyhook/sortable";
-import { KanbanList } from './lists';
-import { Card } from "./card";
-import { ItemTypes } from "./item-types";
-import { Store, select } from '@ngrx/store';
-import { ActionTypes, _render, _listById, _isCopying, CARD_ID_WHEN_COPYING } from "./store";
 import { filter } from 'rxjs/operators';
 
+import { Injectable } from '@angular/core';
+import { select, Store } from '@ngrx/store';
+import { NgRxSortable } from '@topdecked/angular-skyhook-sortable';
+
+import { Card } from './card';
+import { ItemTypes } from './item-types';
+import { KanbanList } from './lists';
+import { _isCopying, _listById, _render, ActionTypes, CARD_ID_WHEN_COPYING } from './store';
 
 @Injectable()
 export class SortableSpecService {

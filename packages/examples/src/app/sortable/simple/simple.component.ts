@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
 import * as faker from 'faker';
-import { SortableSpec, DraggedItem } from "@angular-skyhook/sortable";
+
+import { Component } from '@angular/core';
+import { DraggedItem, SortableSpec } from '@topdecked/angular-skyhook-sortable';
 
 interface SimpleData {
     id: number;

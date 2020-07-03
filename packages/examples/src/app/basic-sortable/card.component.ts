@@ -1,16 +1,8 @@
 import {
-    Component,
-    Input,
-    Output,
-    ElementRef,
-    EventEmitter,
-    ContentChild,
-    TemplateRef,
-    ChangeDetectionStrategy,
-    OnDestroy,
-    Directive
-} from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
+  ChangeDetectionStrategy, Component, ContentChild, Directive, ElementRef, EventEmitter, Input,
+  OnDestroy, Output, TemplateRef
+} from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
 
 interface Card {
     id: number;

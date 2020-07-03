@@ -1,20 +1,13 @@
-import { getEmptyImage } from 'react-dnd-html5-backend';
+import { filter, map } from 'rxjs/operators';
+
 import {
-    Component,
-    OnInit,
-    OnDestroy,
-    ChangeDetectionStrategy,
-    Input,
-    EventEmitter,
-    Output,
-    ElementRef
+  ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output
 } from '@angular/core';
-import { snapToGrid } from './snapToGrid';
-import { SkyhookDndService, Offset } from "@angular-skyhook/core";
-import { Observable } from 'rxjs';
-import { filter, map, tap } from 'rxjs/operators';
+import { Offset, SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { Spot } from '../spot';
-import { Rect, alongEdge, plus, minus, clone, fmap } from '../vectors';
+import { alongEdge, clone, fmap, minus, plus, Rect } from '../vectors';
+import { snapToGrid } from './snapToGrid';
 
 interface Collected {
     item: Spot;

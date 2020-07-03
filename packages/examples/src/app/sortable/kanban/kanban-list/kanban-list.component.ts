@@ -1,18 +1,12 @@
+
+
 import {
-    Component,
-    Input,
-    Output,
-    EventEmitter,
-    ChangeDetectionStrategy,
-    Optional,
-} from "@angular/core";
-import { DragSource } from "@angular-skyhook/core";
-import {
-    DraggedItem, SortableSpec, SkyhookSortableRenderer
-} from "@angular-skyhook/sortable";
-import { Card } from "../card";
-import { KanbanList } from "../lists";
-import { Observable } from "rxjs";
+  ChangeDetectionStrategy, Component, EventEmitter, Input, Optional, Output
+} from '@angular/core';
+import { SkyhookSortableRenderer } from '@topdecked/angular-skyhook-sortable';
+
+import { Card } from '../card';
+import { KanbanList } from '../lists';
 import { SortableSpecService } from '../specs';
 
 @Component({

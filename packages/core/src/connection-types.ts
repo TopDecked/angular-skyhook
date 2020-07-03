@@ -3,16 +3,13 @@
  */
 /** a second comment */
 
-import { DropTargetMonitor } from './target-monitor';
-import { DragSourceMonitor } from './source-monitor';
-import { TypeOrTypeArray } from './type-ish';
-import { Observable, TeardownLogic } from 'rxjs';
+import { Observable, Subscription, SubscriptionLike, TeardownLogic } from 'rxjs';
+
+import { DragPreviewOptions, DragSourceOptions } from './connectors';
 import { DragLayerMonitor } from './layer-monitor';
-import {
-    DragSourceOptions,
-    DragPreviewOptions
-} from './connectors';
-import { Subscription, SubscriptionLike } from 'rxjs';
+import { DragSourceMonitor } from './source-monitor';
+import { DropTargetMonitor } from './target-monitor';
+import { TypeOrTypeArray } from './type-ish';
 
 /**
  * A base type to represent a DOM connection.
@@ -251,7 +248,7 @@ backend, because no other backend provides automatic previews. In those cases
 you must handle every draggable `type` in a drag layer to have any previews at
 all.
 
-Or, you could just use [@angular-skyhook/multi-backend](../@angular-skyhook/multi-backend/).
+Or, you could just use [@topdecked/angular-skyhook-multi-backend](../@topdecked/angular-skyhook-multi-backend/).
 
  */
 export interface DragLayer<Item = any>

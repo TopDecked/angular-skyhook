@@ -1,10 +1,12 @@
-import { Component, Input, ChangeDetectionStrategy, ChangeDetectorRef, NgZone } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+import { ChangeDetectionStrategy, Component, Input, NgZone } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { activatorDropTarget } from './activatorDropTarget';
 import { ItemTypes } from './itemTypes';
 import { TreeService } from './tree.service';
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { Observable } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import { activatorDropTarget } from './activatorDropTarget';
 
 @Component({
   selector: 'drilldown-folder',

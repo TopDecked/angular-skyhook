@@ -1,6 +1,6 @@
-import { HoverTrigger } from './types';
-import { Offset } from '@angular-skyhook/core';
-import { RenderContext, DraggedItem } from './types';
+import { Offset } from '@topdecked/angular-skyhook-core';
+
+import { DraggedItem, HoverTrigger, RenderContext } from './types';
 
 //     ~ List ~
 // [

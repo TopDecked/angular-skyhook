@@ -1,11 +1,10 @@
+import { default as createTestBackend, TestBackend } from 'react-dnd-test-backend';
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { TestComponent } from './test.component';
-import {
-    default as createTestBackend,
-    TestBackend
-} from 'react-dnd-test-backend';
-import { SkyhookDndModule, DRAG_DROP_MANAGER } from "@angular-skyhook/core";
 import { By } from '@angular/platform-browser';
+import { DRAG_DROP_MANAGER, SkyhookDndModule } from '@topdecked/angular-skyhook-core';
+
+import { TestComponent } from './test.component';
 
 describe(TestComponent.name, () => {
     let component: TestComponent;

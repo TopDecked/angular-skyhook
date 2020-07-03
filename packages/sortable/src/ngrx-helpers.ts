@@ -1,6 +1,8 @@
-import { SortableSpec, DraggedItem } from './types';
-import { DropTargetMonitor, DragSourceMonitor } from '@angular-skyhook/core';
 import { Observable } from 'rxjs';
+
+import { DragSourceMonitor, DropTargetMonitor } from '@topdecked/angular-skyhook-core';
+
+import { DraggedItem, SortableSpec } from './types';
 
 export enum SortableEvents {
     BeginDrag = "BeginDrag",

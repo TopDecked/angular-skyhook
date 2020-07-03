@@ -1,26 +1,13 @@
+
+
 import {
-    Component,
-    Input,
-    TemplateRef,
-    ChangeDetectionStrategy,
-    ChangeDetectorRef,
-    OnDestroy,
-    OnChanges,
-    AfterViewInit,
-    AfterContentInit,
-    ElementRef,
-    QueryList,
-    SimpleChanges,
-    ContentChildren,
-} from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
-// @ts-ignore
-import { Observable, Subscription } from "rxjs";
-import {
-    SkyhookSortableTemplate,
-    TemplateContext
-} from "./template.directive";
+  AfterContentInit, AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component,
+  ContentChildren, ElementRef, Input, OnChanges, OnDestroy, QueryList, SimpleChanges, TemplateRef
+} from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { SkyhookSortable } from './sortable.directive';
+import { SkyhookSortableTemplate, TemplateContext } from './template.directive';
 
 @Component({
     selector: "skyhook-sortable-list",

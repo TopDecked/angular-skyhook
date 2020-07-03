@@ -1,6 +1,7 @@
-import { Component, Input, NgZone, OnDestroy } from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { NativeTypes } from "react-dnd-html5-backend";
+import { NativeTypes } from 'react-dnd-html5-backend';
+
+import { Component, Input, OnDestroy } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
 
 interface NativeUrl {
     urls: string[];

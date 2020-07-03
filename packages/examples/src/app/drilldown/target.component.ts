@@ -1,5 +1,6 @@
-import { Input, Component, OnInit } from '@angular/core';
-import { SkyhookDndService } from "@angular-skyhook/core";
+import { Component, Input } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { ItemTypes } from './itemTypes';
 
 @Component({

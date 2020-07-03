@@ -1,10 +1,14 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { NgRxSortable } from "@angular-skyhook/sortable";
+import { Hotkey, HotkeysService } from 'angular2-hotkeys';
+
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { NgRxSortable } from '@topdecked/angular-skyhook-sortable';
+
 import { Blob } from './store/blob';
-import { ActionTypes, SelectBlob, LiftSelected, DropSelected, MoveSelectedUp, MoveSelectedDown } from './store/reducer';
-import { _render, _selected, _lifted } from './store/selectors';
-import { HotkeysService, Hotkey } from 'angular2-hotkeys';
+import {
+  ActionTypes, DropSelected, LiftSelected, MoveSelectedDown, MoveSelectedUp, SelectBlob
+} from './store/reducer';
+import { _lifted, _render, _selected } from './store/selectors';
 
 @Component({
     selector: 'rxsort-sortable',

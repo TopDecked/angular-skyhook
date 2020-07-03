@@ -1,17 +1,24 @@
-import { Component, Input, OnDestroy, OnInit, ChangeDetectionStrategy, AfterViewInit, ElementRef, ViewChild } from "@angular/core";
-import { SkyhookDndService, DragSourceOptions } from "@angular-skyhook/core";
-import { ItemTypes } from "../item-types";
-import { Store, createSelector } from "@ngrx/store";
-import { State } from "app/reducers";
-import { NewEvent, HoverNewEvent, BeginDragNewEvent, EndDragNewEvent, DropNewEvent, HoverExistingEvent, DropExistingEvent, HoverResizeStart, HoverResizeEnd } from "../store/calendar.actions";
-import { startDateSelector, isDraggingSelector, allEventSelector } from "../store/selectors";
-import { Observable, Subject, Subscription } from "rxjs";
-import { List } from "immutable";
-import { CalendarEvent, Diff } from "app/calendar/event";
+import { CalendarEvent } from 'app/calendar/event';
+import { State } from 'app/reducers';
 import * as faker from 'faker';
+import { List } from 'immutable';
 import * as Pressure from 'pressure';
-import { switchMap, take } from "rxjs/operators";
-import { daysBetween } from "../date-utils";
+import { Observable, Subject, Subscription } from 'rxjs';
+import { switchMap, take } from 'rxjs/operators';
+
+import {
+  AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild
+} from '@angular/core';
+import { createSelector, Store } from '@ngrx/store';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { daysBetween } from '../date-utils';
+import { ItemTypes } from '../item-types';
+import {
+  BeginDragNewEvent, DropExistingEvent, DropNewEvent, EndDragNewEvent, HoverExistingEvent,
+  HoverNewEvent, HoverResizeEnd, HoverResizeStart, NewEvent
+} from '../store/calendar.actions';
+import { allEventSelector, isDraggingSelector, startDateSelector } from '../store/selectors';
 
 @Component({
     selector: 'cal-day',

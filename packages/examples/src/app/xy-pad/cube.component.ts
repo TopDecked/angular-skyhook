@@ -1,6 +1,8 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { SkyhookDndService, Offset } from "@angular-skyhook/core";
-import { getEmptyImage } from 'react-dnd-html5-backend';
+
+
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { Spot } from './spot';
 
 @Component({

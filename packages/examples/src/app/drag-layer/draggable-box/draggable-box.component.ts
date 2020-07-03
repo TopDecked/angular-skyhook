@@ -1,8 +1,8 @@
-import { Component, Input } from '@angular/core';
-import { SkyhookDndService, DragPreviewOptions } from "@angular-skyhook/core";
 import { getEmptyImage } from 'react-dnd-html5-backend';
-import { map } from 'rxjs/operators';
-import { ChangeDetectionStrategy } from '@angular/core';
+
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { BoxWithLocation } from '../BoxWithLocation';
 
 @Component({

@@ -1,9 +1,9 @@
-import { getEmptyImage } from 'react-dnd-html5-backend';
-import { Component, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
+import { filter, map } from 'rxjs/operators';
+
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { snapToGrid } from './snapToGrid';
-import { SkyhookDndService } from "@angular-skyhook/core"
-import { Observable } from 'rxjs';
-import { filter, map, tap } from 'rxjs/operators';
 
 interface Offset { x: number, y: number };
 

@@ -1,8 +1,10 @@
-import { Component } from "@angular/core";
-import { SkyhookDndService } from '@angular-skyhook/core';
-import { SortableSpec, DraggedItem, spillTarget } from "@angular-skyhook/sortable";
-import { Question, MathQuestion, NameQuestion } from './Question';
 import { produce } from 'immer';
+
+import { Component } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+import { DraggedItem, SortableSpec, spillTarget } from '@topdecked/angular-skyhook-sortable';
+
+import { MathQuestion, NameQuestion, Question } from './Question';
 
 @Component({
     selector: 'app-external-sortable',

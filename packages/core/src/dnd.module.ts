@@ -1,26 +1,16 @@
-import {
-    NgModule,
-    ModuleWithProviders,
-    NgZone
-} from '@angular/core';
+import { BackendFactory, createDragDropManager, DragDropManager } from 'dnd-core';
+
+import { ModuleWithProviders, NgModule, NgZone } from '@angular/core';
 
 import { SkyhookDndService } from './connector.service';
 import {
-    DndDirective,
-    DragSourceDirective,
-    DropTargetDirective,
-    DragPreviewDirective
+  DndDirective, DragPreviewDirective, DragSourceDirective, DropTargetDirective
 } from './dnd.directive';
-
-import { DRAG_DROP_BACKEND, DRAG_DROP_BACKEND_OPTIONS, DRAG_DROP_BACKEND_DEBUG_MODE, DRAG_DROP_MANAGER, DRAG_DROP_GLOBAL_CONTEXT } from './tokens';
-
-import {
-    createDragDropManager,
-    BackendFactory,
-    DragDropManager
-} from 'dnd-core';
-
 import { invariant } from './internal/invariant';
+import {
+  DRAG_DROP_BACKEND, DRAG_DROP_BACKEND_DEBUG_MODE, DRAG_DROP_BACKEND_OPTIONS,
+  DRAG_DROP_GLOBAL_CONTEXT, DRAG_DROP_MANAGER
+} from './tokens';
 
 /** @ignore */
 export function unpackBackendForEs5Users(backendOrModule: any) {
@@ -90,7 +80,7 @@ export interface BackendInput {
  * For use with the MultiBackend:
  *
  * ```typescript
- * import { createDefaultMultiBackend } from '@angular-skyhook/multi-backend';
+ * import { createDefaultMultiBackend } from '@topdecked/angular-skyhook-multi-backend';
  * // ...
  * SkyhookDndModule.forRoot({ backendFactory: createDefaultMultiBackend })
  * ```

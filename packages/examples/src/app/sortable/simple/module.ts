@@ -1,13 +1,14 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { UtilityModule } from "app/utility.module";
-import { SkyhookDndModule } from "@angular-skyhook/core";
-import { RouterModule } from "@angular/router";
-import { SkyhookMultiBackendModule } from "@angular-skyhook/multi-backend";
-import { SkyhookSortableModule } from "@angular-skyhook/sortable";
+import { UtilityModule } from 'app/utility.module';
 
-import { SimpleComponent } from "./simple.component";
-import { ContainerComponent } from "./container.component";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { SkyhookDndModule } from '@topdecked/angular-skyhook-core';
+import { SkyhookMultiBackendModule } from '@topdecked/angular-skyhook-multi-backend';
+import { SkyhookSortableModule } from '@topdecked/angular-skyhook-sortable';
+
+import { ContainerComponent } from './container.component';
+import { SimpleComponent } from './simple.component';
 
 @NgModule({
     declarations: [

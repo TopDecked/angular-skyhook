@@ -1,9 +1,9 @@
-import { Component, EventEmitter, ChangeDetectionStrategy } from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { ItemTypes } from "./item-types";
-import { DraggedItem } from "@angular-skyhook/sortable";
-import { Output } from "@angular/core";
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+import { DraggedItem } from '@topdecked/angular-skyhook-sortable';
+
 import { Card } from './card';
+import { ItemTypes } from './item-types';
 
 @Component({
     selector: 'kanban-trash-can',

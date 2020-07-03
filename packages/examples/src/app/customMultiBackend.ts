@@ -1,9 +1,10 @@
-import { MouseTransition, MultiBackend } from '@angular-skyhook/multi-backend';
-import { BackendTransition, TouchTransition } from 'dnd-multi-backend';
 import { BackendFactory } from 'dnd-core';
+import { BackendTransition, TouchTransition } from 'dnd-multi-backend';
 import { default as HTML5Backend } from 'react-dnd-html5-backend';
 import { default as TouchBackend } from 'react-dnd-touch-backend';
 import { TouchBackendOptions } from 'react-dnd-touch-backend/lib/interfaces';
+
+import { MouseTransition, MultiBackend } from '@topdecked/angular-skyhook-multi-backend';
 
 const backendTransitions: BackendTransition[] = [
     {

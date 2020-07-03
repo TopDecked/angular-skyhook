@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
-import { SkyhookDndService } from "@angular-skyhook/core";
-import { ItemTypes } from "./item-types";
+import { Component } from '@angular/core';
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
+import { ItemTypes } from './item-types';
 
 @Component({
     selector: 'de-copy-target',

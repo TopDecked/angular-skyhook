@@ -1,6 +1,6 @@
-import { Input, Component, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
-import { SkyhookDndService, DragPreviewOptions, DragSourceSpec } from "@angular-skyhook/core";
-import { Subject, Subscription } from 'rxjs';
+
+
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-trash',

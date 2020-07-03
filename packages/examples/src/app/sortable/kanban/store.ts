@@ -1,10 +1,11 @@
-import { createSelector, createFeatureSelector } from "@ngrx/store";
+import { createFeatureSelector, createSelector } from '@ngrx/store';
+import { DraggedItem, SortableAction, SortableEvents } from '@topdecked/angular-skyhook-sortable';
 
-import { DraggedItem, SortableAction, SortableEvents } from "@angular-skyhook/sortable";
-
+import { Card } from './card';
 // our list operations
-import { KanbanList, KanbanBoard, initialBoard, insertList, removeList, insertCard, removeCard } from './lists';
-import { Card } from "./card";
+import {
+  initialBoard, insertCard, insertList, KanbanBoard, KanbanList, removeCard, removeList
+} from './lists';
 
 export enum ActionTypes {
     SortList   = "[Kanban] SortList",

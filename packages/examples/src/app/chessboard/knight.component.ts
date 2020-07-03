@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SkyhookDndService } from "@angular-skyhook/core";
+import { SkyhookDndService } from '@topdecked/angular-skyhook-core';
+
 import { ItemTypes } from './constants';
 import { horseImage } from './horseImage';
 
