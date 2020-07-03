@@ -44,10 +44,9 @@ export function managerFactory(
 }
 
 /** @ignore */
-declare var global: NodeJS.Global;
 /** @ignore */
 export function getGlobalContext(): any {
-    return typeof global !== 'undefined' ? global : (window as any);
+    return (window as any);
 }
 
 /*
