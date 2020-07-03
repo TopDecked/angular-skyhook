@@ -25,12 +25,12 @@
         },
         "bootstrap": {
             "scope": [
-                "@angular-skyhook/*"
+                "@topdecked/angular-skyhook*"
             ]
         },
         "exec": {
             "scope": [
-                "@angular-skyhook/*"
+                "@topdecked/angular-skyhook*"
             ]
         },
         "clean": {
