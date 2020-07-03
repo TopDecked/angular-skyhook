@@ -44,7 +44,7 @@ export function managerFactory(
 }
 
 /** @ignore */
-/** @ignore */
+/** @ignore */ 
 export function getGlobalContext(): any {
     return (window as any);
 }
