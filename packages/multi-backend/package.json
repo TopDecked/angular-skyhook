@@ -1,6 +1,6 @@
 {
     "name": "@topdecked/angular-skyhook-multi-backend",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "repository": "https://github.com/TopDecked/angular-skyhook",
     "dependencies": {
         "dnd-core": "^9.0.0",
@@ -10,8 +10,8 @@
         "tslib": "^1.9.0"
     },
     "peerDependencies": {
-        "@topdecked/angular-skyhook-core": "1.0.0",
         "@angular/core": ">= 6.0.0",
+        "@topdecked/angular-skyhook-core": "1.0.0",
         "rxjs": ">= 6.0.0"
     },
     "scripts": {
@@ -21,6 +21,6 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@topdecked/angular-skyhook-core": "1.4.0"
+        "@topdecked/angular-skyhook-core": "^1.4.1"
     }
 }
