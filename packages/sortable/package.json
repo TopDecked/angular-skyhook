@@ -1,6 +1,6 @@
 {
     "name": "@topdecked/angular-skyhook-sortable",
-    "version": "1.4.5",
+    "version": "1.4.7",
     "repository": "https://github.com/TopDecked/angular-skyhook",
     "dependencies": {
         "tslib": "^1.9.0"
@@ -17,6 +17,6 @@
     },
     "license": "MIT",
     "devDependencies": {
-        "@topdecked/angular-skyhook-core": "^1.4.4"
+        "@topdecked/angular-skyhook-core": "^1.4.7"
     }
 }
